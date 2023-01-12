@@ -22,6 +22,22 @@
 		E53A70A8296E274300F886DA /* FetchFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53A70A7296E274300F886DA /* FetchFont.swift */; };
 		E53ECA14296E297E007E136F /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53ECA13296E297E007E136F /* Logger.swift */; };
 		E53ECA16296E299D007E136F /* Haptic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53ECA15296E299D007E136F /* Haptic.swift */; };
+		E53ECA1F296E3AC0007E136F /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53ECA1E296E3AC0007E136F /* APIClient.swift */; };
+		E53ECA22296E4421007E136F /* DessertModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53ECA21296E4421007E136F /* DessertModel.swift */; };
+		E53ECA26296E4B34007E136F /* DessertCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53ECA25296E4B34007E136F /* DessertCollectionViewCell.swift */; };
+		E53ECA28296E51F1007E136F /* HomeCollectionViewHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53ECA27296E51F1007E136F /* HomeCollectionViewHeaderCell.swift */; };
+		E53ECA2A296E5561007E136F /* HomeCollectionViewSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53ECA29296E5561007E136F /* HomeCollectionViewSearchCell.swift */; };
+		E53ECA2D296E55B6007E136F /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53ECA2C296E55B6007E136F /* SearchBar.swift */; };
+		E53ECA2F296E67C3007E136F /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53ECA2E296E67C3007E136F /* RemoteImageView.swift */; };
+		E53ECA36296E7377007E136F /* MealVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53ECA35296E7377007E136F /* MealVC.swift */; };
+		E53ECA39296E7385007E136F /* MealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53ECA38296E7385007E136F /* MealView.swift */; };
+		E53ECA3B296E75AB007E136F /* MealDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53ECA3A296E75AB007E136F /* MealDataModel.swift */; };
+		E5F764CF296F20F100CE2FD0 /* IngredientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F764CE296F20F100CE2FD0 /* IngredientModel.swift */; };
+		E5F764D9296F7AEB00CE2FD0 /* HomeSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F764D8296F7AEB00CE2FD0 /* HomeSections.swift */; };
+		E5F764DA296F813C00CE2FD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E53A706E296E24FF00F886DA /* Assets.xcassets */; };
+		E5F764DB296F813C00CE2FD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E53A706E296E24FF00F886DA /* Assets.xcassets */; };
+		E5F764DD296F854700CE2FD0 /* dessertData.json in Resources */ = {isa = PBXBuildFile; fileRef = E5F764DC296F854700CE2FD0 /* dessertData.json */; };
+		E5F764DF296F89B900CE2FD0 /* mealData.json in Resources */ = {isa = PBXBuildFile; fileRef = E5F764DE296F89B900CE2FD0 /* mealData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +77,20 @@
 		E53A70A7296E274300F886DA /* FetchFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchFont.swift; sourceTree = "<group>"; };
 		E53ECA13296E297E007E136F /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		E53ECA15296E299D007E136F /* Haptic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptic.swift; sourceTree = "<group>"; };
+		E53ECA1E296E3AC0007E136F /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		E53ECA21296E4421007E136F /* DessertModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertModel.swift; sourceTree = "<group>"; };
+		E53ECA25296E4B34007E136F /* DessertCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertCollectionViewCell.swift; sourceTree = "<group>"; };
+		E53ECA27296E51F1007E136F /* HomeCollectionViewHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewHeaderCell.swift; sourceTree = "<group>"; };
+		E53ECA29296E5561007E136F /* HomeCollectionViewSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewSearchCell.swift; sourceTree = "<group>"; };
+		E53ECA2C296E55B6007E136F /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		E53ECA2E296E67C3007E136F /* RemoteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
+		E53ECA35296E7377007E136F /* MealVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealVC.swift; sourceTree = "<group>"; };
+		E53ECA38296E7385007E136F /* MealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealView.swift; sourceTree = "<group>"; };
+		E53ECA3A296E75AB007E136F /* MealDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDataModel.swift; sourceTree = "<group>"; };
+		E5F764CE296F20F100CE2FD0 /* IngredientModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientModel.swift; sourceTree = "<group>"; };
+		E5F764D8296F7AEB00CE2FD0 /* HomeSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSections.swift; sourceTree = "<group>"; };
+		E5F764DC296F854700CE2FD0 /* dessertData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dessertData.json; sourceTree = "<group>"; };
+		E5F764DE296F89B900CE2FD0 /* mealData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mealData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +141,7 @@
 		E53A7064296E24FE00F886DA /* FetchDessert */ = {
 			isa = PBXGroup;
 			children = (
+				E53ECA20296E43C0007E136F /* Models */,
 				E53A70A3296E272100F886DA /* Helpers */,
 				E53A7098296E25D100F886DA /* Views */,
 				E53A7095296E25BF00F886DA /* View Controllers */,
@@ -127,6 +158,8 @@
 			isa = PBXGroup;
 			children = (
 				E53A707C296E24FF00F886DA /* FetchDessertTests.swift */,
+				E5F764DC296F854700CE2FD0 /* dessertData.json */,
+				E5F764DE296F89B900CE2FD0 /* mealData.json */,
 			);
 			path = FetchDessertTests;
 			sourceTree = "<group>";
@@ -143,6 +176,7 @@
 		E53A7095296E25BF00F886DA /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E53ECA34296E72F9007E136F /* Meal */,
 				E53A709D296E264200F886DA /* Home */,
 				E53A7099296E25DA00F886DA /* BaseViewController.swift */,
 			);
@@ -152,6 +186,8 @@
 		E53A7098296E25D100F886DA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E53ECA37296E737B007E136F /* Meal */,
+				E53ECA2B296E55A1007E136F /* Reusable Views */,
 				E53A70A0296E264C00F886DA /* Home */,
 				E53A709B296E25E100F886DA /* BaseView.swift */,
 			);
@@ -161,6 +197,7 @@
 		E53A709D296E264200F886DA /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				E5F764D8296F7AEB00CE2FD0 /* HomeSections.swift */,
 				E53A709E296E264A00F886DA /* HomeVC.swift */,
 			);
 			path = Home;
@@ -170,6 +207,9 @@
 			isa = PBXGroup;
 			children = (
 				E53A70A1296E265700F886DA /* HomeView.swift */,
+				E53ECA25296E4B34007E136F /* DessertCollectionViewCell.swift */,
+				E53ECA27296E51F1007E136F /* HomeCollectionViewHeaderCell.swift */,
+				E53ECA29296E5561007E136F /* HomeCollectionViewSearchCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -177,12 +217,56 @@
 		E53A70A3296E272100F886DA /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				E53ECA1D296E3A18007E136F /* API */,
 				E53A70A5296E273300F886DA /* FetchColor.swift */,
 				E53A70A7296E274300F886DA /* FetchFont.swift */,
 				E53ECA13296E297E007E136F /* Logger.swift */,
 				E53ECA15296E299D007E136F /* Haptic.swift */,
+				E53ECA2E296E67C3007E136F /* RemoteImageView.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E53ECA1D296E3A18007E136F /* API */ = {
+			isa = PBXGroup;
+			children = (
+				E53ECA1E296E3AC0007E136F /* APIClient.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		E53ECA20296E43C0007E136F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E53ECA21296E4421007E136F /* DessertModel.swift */,
+				E53ECA3A296E75AB007E136F /* MealDataModel.swift */,
+				E5F764CE296F20F100CE2FD0 /* IngredientModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E53ECA2B296E55A1007E136F /* Reusable Views */ = {
+			isa = PBXGroup;
+			children = (
+				E53ECA2C296E55B6007E136F /* SearchBar.swift */,
+			);
+			path = "Reusable Views";
+			sourceTree = "<group>";
+		};
+		E53ECA34296E72F9007E136F /* Meal */ = {
+			isa = PBXGroup;
+			children = (
+				E53ECA35296E7377007E136F /* MealVC.swift */,
+			);
+			path = Meal;
+			sourceTree = "<group>";
+		};
+		E53ECA37296E737B007E136F /* Meal */ = {
+			isa = PBXGroup;
+			children = (
+				E53ECA38296E7385007E136F /* MealView.swift */,
+			);
+			path = Meal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,6 +382,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5F764DF296F89B900CE2FD0 /* mealData.json in Resources */,
+				E5F764DB296F813C00CE2FD0 /* Assets.xcassets in Resources */,
+				E5F764DD296F854700CE2FD0 /* dessertData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +392,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5F764DA296F813C00CE2FD0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,14 +405,26 @@
 			files = (
 				E53A7066296E24FE00F886DA /* AppDelegate.swift in Sources */,
 				E53A70A6296E273300F886DA /* FetchColor.swift in Sources */,
+				E5F764CF296F20F100CE2FD0 /* IngredientModel.swift in Sources */,
+				E53ECA36296E7377007E136F /* MealVC.swift in Sources */,
+				E53ECA3B296E75AB007E136F /* MealDataModel.swift in Sources */,
 				E53A709F296E264A00F886DA /* HomeVC.swift in Sources */,
 				E53A70A8296E274300F886DA /* FetchFont.swift in Sources */,
+				E53ECA22296E4421007E136F /* DessertModel.swift in Sources */,
+				E53ECA28296E51F1007E136F /* HomeCollectionViewHeaderCell.swift in Sources */,
+				E53ECA26296E4B34007E136F /* DessertCollectionViewCell.swift in Sources */,
 				E53ECA14296E297E007E136F /* Logger.swift in Sources */,
+				E53ECA1F296E3AC0007E136F /* APIClient.swift in Sources */,
 				E53A7068296E24FE00F886DA /* SceneDelegate.swift in Sources */,
+				E53ECA2F296E67C3007E136F /* RemoteImageView.swift in Sources */,
+				E5F764D9296F7AEB00CE2FD0 /* HomeSections.swift in Sources */,
 				E53ECA16296E299D007E136F /* Haptic.swift in Sources */,
 				E53A70A2296E265700F886DA /* HomeView.swift in Sources */,
 				E53A709A296E25DA00F886DA /* BaseViewController.swift in Sources */,
 				E53A709C296E25E100F886DA /* BaseView.swift in Sources */,
+				E53ECA2D296E55B6007E136F /* SearchBar.swift in Sources */,
+				E53ECA2A296E5561007E136F /* HomeCollectionViewSearchCell.swift in Sources */,
+				E53ECA39296E7385007E136F /* MealView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,8 +597,8 @@
 				INFOPLIST_FILE = FetchDessert/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -507,9 +607,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jfd.FetchDessert;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -524,8 +627,8 @@
 				INFOPLIST_FILE = FetchDessert/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -534,9 +637,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jfd.FetchDessert;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
