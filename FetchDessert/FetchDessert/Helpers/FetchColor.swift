@@ -8,6 +8,7 @@
 import UIKit
 
 struct FetchColor {
+    
     // Use red as default instead of force unwrap so its immediatly obivous when an asset is missing
     
     static let background = UIColor(named: "HomeBackground") ?? UIColor.red
@@ -17,4 +18,7 @@ struct FetchColor {
     static let white = UIColor.white
     
     static let clear = UIColor.clear
+    
+    static let black = UIColor.black
+    
 }
