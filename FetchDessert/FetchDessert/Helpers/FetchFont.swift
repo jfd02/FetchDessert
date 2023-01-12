@@ -9,10 +9,6 @@ import UIKit
 
 struct FetchFont {
 
-    static func light(size: CGFloat) -> UIFont {
-        return UIFont.systemFont(ofSize: size, weight: .light)
-    }
-
     static func bold(size: CGFloat) -> UIFont {
         return UIFont.systemFont(ofSize: size, weight: .bold)
     }

@@ -38,6 +38,8 @@
 		E5F764DB296F813C00CE2FD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E53A706E296E24FF00F886DA /* Assets.xcassets */; };
 		E5F764DD296F854700CE2FD0 /* dessertData.json in Resources */ = {isa = PBXBuildFile; fileRef = E5F764DC296F854700CE2FD0 /* dessertData.json */; };
 		E5F764DF296F89B900CE2FD0 /* mealData.json in Resources */ = {isa = PBXBuildFile; fileRef = E5F764DE296F89B900CE2FD0 /* mealData.json */; };
+		E5F764E4296F957F00CE2FD0 /* DessertListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F764E3296F957F00CE2FD0 /* DessertListModel.swift */; };
+		E5F764E6296F959600CE2FD0 /* MealDataListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F764E5296F959600CE2FD0 /* MealDataListModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +93,8 @@
 		E5F764D8296F7AEB00CE2FD0 /* HomeSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSections.swift; sourceTree = "<group>"; };
 		E5F764DC296F854700CE2FD0 /* dessertData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dessertData.json; sourceTree = "<group>"; };
 		E5F764DE296F89B900CE2FD0 /* mealData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mealData.json; sourceTree = "<group>"; };
+		E5F764E3296F957F00CE2FD0 /* DessertListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertListModel.swift; sourceTree = "<group>"; };
+		E5F764E5296F959600CE2FD0 /* MealDataListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDataListModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,10 +210,8 @@
 		E53A70A0296E264C00F886DA /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				E5F764E7296F95E900CE2FD0 /* Home Collection View Cells */,
 				E53A70A1296E265700F886DA /* HomeView.swift */,
-				E53ECA25296E4B34007E136F /* DessertCollectionViewCell.swift */,
-				E53ECA27296E51F1007E136F /* HomeCollectionViewHeaderCell.swift */,
-				E53ECA29296E5561007E136F /* HomeCollectionViewSearchCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -241,6 +243,8 @@
 				E53ECA21296E4421007E136F /* DessertModel.swift */,
 				E53ECA3A296E75AB007E136F /* MealDataModel.swift */,
 				E5F764CE296F20F100CE2FD0 /* IngredientModel.swift */,
+				E5F764E3296F957F00CE2FD0 /* DessertListModel.swift */,
+				E5F764E5296F959600CE2FD0 /* MealDataListModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -248,6 +252,7 @@
 		E53ECA2B296E55A1007E136F /* Reusable Views */ = {
 			isa = PBXGroup;
 			children = (
+				E53ECA25296E4B34007E136F /* DessertCollectionViewCell.swift */,
 				E53ECA2C296E55B6007E136F /* SearchBar.swift */,
 			);
 			path = "Reusable Views";
@@ -267,6 +272,15 @@
 				E53ECA38296E7385007E136F /* MealView.swift */,
 			);
 			path = Meal;
+			sourceTree = "<group>";
+		};
+		E5F764E7296F95E900CE2FD0 /* Home Collection View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E53ECA27296E51F1007E136F /* HomeCollectionViewHeaderCell.swift */,
+				E53ECA29296E5561007E136F /* HomeCollectionViewSearchCell.swift */,
+			);
+			path = "Home Collection View Cells";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -403,6 +417,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5F764E4296F957F00CE2FD0 /* DessertListModel.swift in Sources */,
 				E53A7066296E24FE00F886DA /* AppDelegate.swift in Sources */,
 				E53A70A6296E273300F886DA /* FetchColor.swift in Sources */,
 				E5F764CF296F20F100CE2FD0 /* IngredientModel.swift in Sources */,
@@ -410,6 +425,7 @@
 				E53ECA3B296E75AB007E136F /* MealDataModel.swift in Sources */,
 				E53A709F296E264A00F886DA /* HomeVC.swift in Sources */,
 				E53A70A8296E274300F886DA /* FetchFont.swift in Sources */,
+				E5F764E6296F959600CE2FD0 /* MealDataListModel.swift in Sources */,
 				E53ECA22296E4421007E136F /* DessertModel.swift in Sources */,
 				E53ECA28296E51F1007E136F /* HomeCollectionViewHeaderCell.swift in Sources */,
 				E53ECA26296E4B34007E136F /* DessertCollectionViewCell.swift in Sources */,

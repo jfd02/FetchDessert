@@ -127,7 +127,8 @@ extension HomeVC: UICollectionViewDelegateFlowLayout {
                         at indexPath: IndexPath) -> UICollectionReusableView {
         switch HomeSections(rawValue: indexPath.section) {
         case .header:
-            let cell = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: HomeCollectionViewHeaderCell.identifier,
+            let cell = collectionView.dequeueReusableSupplementaryView(ofKind: kind,
+                                                                       withReuseIdentifier: HomeCollectionViewHeaderCell.identifier,
                                                                        for: indexPath)
             return cell
         case .search:
@@ -165,6 +166,7 @@ extension HomeVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if loadingMealView { return }
         loadingMealView = true
+        
         switch HomeSections(rawValue: indexPath.section) {
         case .desserts:
             let dessert = filteredDesserts[indexPath.row]
