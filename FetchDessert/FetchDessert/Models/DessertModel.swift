@@ -8,6 +8,20 @@
 import Foundation
 import UIKit
 
+class DessertListModel: Codable {
+    
+    let meals: [DessertModel]
+    
+    enum CodingKeys: String, CodingKey {
+        case meals
+    }
+    
+    required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        meals = try container.decode([DessertModel].self, forKey: .meals)
+    }
+}
+
 class DessertModel: Codable {
     
     let mealName: String
