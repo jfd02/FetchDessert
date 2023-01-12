@@ -10,7 +10,7 @@
 1. Add image caching to persist images through multiple sessions
 2. Build a more robust API client to reduce duplicated code
 3. Handle network failures
-4. Create reusable views for meal ingredients
+4. Create reusable views for meal ingredients view
 
 
 ![main](https://i.imgur.com/9mwDktZ.png)
