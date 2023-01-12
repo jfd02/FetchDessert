@@ -14,7 +14,6 @@ class BaseView: UIView {
 
         setupView()
         layoutView()
-        setupAccessibility()
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -22,7 +21,6 @@ class BaseView: UIView {
 
         setupView()
         layoutView()
-        setupAccessibility()
     }
 
     // Subclasses should override this method to add subviews.
@@ -34,10 +32,4 @@ class BaseView: UIView {
     func layoutView() {
 
     }
-
-    // Subclasses should override this method to add accessibility.
-    func setupAccessibility() {
-
-    }
-
 }
