@@ -50,15 +50,31 @@ class DessertCollectionViewCell: UICollectionViewCell {
     private let dessertLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = FetchFont.bold(size: 13)
+        label.font = FetchFont.bold(size: 14)
         label.numberOfLines = 2
         label.lineBreakMode = .byTruncatingTail
+        label.textColor = FetchColor.black
         return label
     }()
     
+    private let seeMoreLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = FetchColor.primary
+        label.numberOfLines = 1
+        label.text = "See recipe"
+        label.font = FetchFont.medium(size: 12)
+        return label
+    }()
+    
+    private let textMargins = UILayoutGuide()
+    
     private func setupView() {
+        contentView.addLayoutGuide(textMargins)
         contentView.addSubview(dessertImage)
         contentView.addSubview(dessertLabel)
+        contentView.addSubview(seeMoreLabel)
+        
         contentView.backgroundColor = FetchColor.background
         contentView.layer.cornerRadius = cornerRadius
         contentView.layer.masksToBounds = true
@@ -67,20 +83,30 @@ class DessertCollectionViewCell: UICollectionViewCell {
         
         layer.shadowRadius = 4.0
         layer.shadowOpacity = 0.10
-        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowColor = FetchColor.black.cgColor
         layer.shadowOffset = CGSize(width: 0, height: 5)
     }
     
     private func layoutView() {
+        dessertImage.setContentHuggingPriority(.defaultLow, for: .vertical)
+        dessertImage.setContentCompressionResistancePriority(.defaultLow, for: .vertical)
+        
         NSLayoutConstraint.activate([
+            textMargins.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 8),
+            textMargins.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor, constant: -8),
+            
             dessertImage.topAnchor.constraint(equalTo: self.contentView.topAnchor),
             dessertImage.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor),
             dessertImage.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor),
-            dessertImage.heightAnchor.constraint(equalTo: self.contentView.heightAnchor, multiplier: 0.7),
+            dessertImage.bottomAnchor.constraint(equalTo: dessertLabel.topAnchor, constant: -8),
             
-            dessertLabel.topAnchor.constraint(equalTo: dessertImage.bottomAnchor, constant: 5),
-            dessertLabel.leadingAnchor.constraint(equalTo: dessertImage.leadingAnchor, constant: 5),
-            dessertLabel.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor, constant: -5),
+            dessertLabel.leadingAnchor.constraint(equalTo: textMargins.leadingAnchor),
+            dessertLabel.trailingAnchor.constraint(equalTo: textMargins.trailingAnchor),
+            dessertLabel.bottomAnchor.constraint(equalTo: self.seeMoreLabel.topAnchor, constant: -8),
+            
+            seeMoreLabel.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor, constant: -8),
+            seeMoreLabel.leadingAnchor.constraint(equalTo: textMargins.leadingAnchor),
+            seeMoreLabel.trailingAnchor.constraint(equalTo: textMargins.trailingAnchor),
         ])
     }
     
@@ -94,5 +120,4 @@ class DessertCollectionViewCell: UICollectionViewCell {
         dessertLabel.text = ""
         dessertImage.image = nil
     }
-        
 }
