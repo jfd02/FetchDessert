@@ -16,7 +16,7 @@ class RemoteImageView: UIImageView {
             guard let self = self else { return }
             DispatchQueue.main.async {
                 UIView.transition(with: self,
-                              duration:0.5,
+                              duration: 0.5,
                               options: .transitionCrossDissolve,
                               animations: { self.image = image },
                               completion: nil)

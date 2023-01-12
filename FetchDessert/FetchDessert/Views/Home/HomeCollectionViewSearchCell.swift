@@ -12,39 +12,39 @@ protocol HomeCollectionViewSearchCellDelegate: AnyObject {
 }
 
 class HomeCollectionViewSearchCell: UICollectionReusableView {
-    
+
     weak var delegate: HomeCollectionViewSearchCellDelegate?
-    
+
     static var identifier = "HomeCollectionViewSearchCell"
-    
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
         layoutView()
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     private let searchBar: SearchBar = {
         let label = SearchBar()
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
-    
+
     private func setupView() {
         self.backgroundColor = FetchColor.background
         self.addSubview(searchBar)
         searchBar.delegate = self
     }
-    
+
     private func layoutView() {
         NSLayoutConstraint.activate([
             searchBar.topAnchor.constraint(equalTo: self.topAnchor),
             searchBar.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 15),
             searchBar.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -15),
-            searchBar.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -10),
+            searchBar.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -10)
         ])
     }
 }

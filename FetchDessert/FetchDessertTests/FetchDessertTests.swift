@@ -9,16 +9,16 @@ import XCTest
 @testable import FetchDessert
 
 final class FetchDessertTests: XCTestCase {
-    
+
     func testDessertListModel() throws {
         let testBundle = Bundle(for: type(of: self))
         let filePath = testBundle.path(forResource: "dessertData", ofType: "json")
-        
+
         guard let filePath = filePath else {
             XCTFail("filePath is nil")
             return
         }
-        
+
         do {
             let data = try Data(contentsOf: URL(fileURLWithPath: filePath), options: .mappedIfSafe)
             let returnValue = try JSONDecoder().decode(DessertListModel.self, from: data)
@@ -27,16 +27,16 @@ final class FetchDessertTests: XCTestCase {
             XCTFail("Decoding JSON failed")
           }
     }
-    
+
     func testMealModel() throws {
         let testBundle = Bundle(for: type(of: self))
         let filePath = testBundle.path(forResource: "mealData", ofType: "json")
-        
+
         guard let filePath = filePath else {
             XCTFail("filePath is nil")
             return
         }
-        
+
         do {
             let data = try Data(contentsOf: URL(fileURLWithPath: filePath), options: .mappedIfSafe)
             let returnValue = try JSONDecoder().decode(MealDataListModel.self, from: data)
